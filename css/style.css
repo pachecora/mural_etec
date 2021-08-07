@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+	padding: 0;
+	/* background-color: #000; */
+}
+
+nav{
+
+}
+
+ul{
+	margin: 0;
+	list-style: none; /* Retira o marcador das listas */
+	padding: 30px;
+	text-align: center;	/* Centraliza todos os itens da lista */
+	/* background-color: #1289A7; */
+	
+
+}
+
+li{
+	display: inline-block;	/* Transforma todos os itens da lista em palavras, (mesma linha) */
+	bor  der: 1px solid black;
+	padding: 15px;	/* Aumenta o espaçamento interno, esta será a área "clicável" do menu */
+	width: 150px;	/* Aumenta a largura dos itens da lista, ou seja os menus */
+	text-transform: uppercase;
+	margin-left: 10px;	/* Aumenta o espaço externo entre os itens do menu */
+	cursor: pointer;	/* Define o cursor do mouse como a "mãozinha" */
+	box-shadow: 5px 5px 5px #9ad4d6;
+}
+
+/* Hover é o efeito de alterar o visual quando posicionamos o mouse sobre o elemente com hover */
+li:hover{	
+	background: #ffef9f;	
+	text-decoration: underline;	/* Cria o underline sobre os itens do menu */
+	font-weight: bolder;
+}
