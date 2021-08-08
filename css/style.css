@@ -4,8 +4,27 @@ body{
 	/* background-color: #000; */
 }
 
-nav{
+.container{
+	display: grid;	/* Cria o contexto de formatação de grade */
+	grid-template-rows: auto auto 15vw;
+	grid-template-areas: 
+		"primaria menu secundaria"
+		"primaria principal secundaria"
+		"primaria rodape secundaria";
+}
 
+.menu{ grid-area: menu; }
+.primaria{ grid-area: primaria; }
+.principal{ grid-area: principal; }
+.secundaria{ grid-area: secundaria; }
+.rodape{ grid-area: rodape; }
+
+h1{
+	margin: 50px;
+	box-shadow: 5px 5px 5px #9ad4d6;
+	font-weight: 100;
+	padding: 30px;
+	border-radius: 5px;
 }
 
 ul{
@@ -20,13 +39,14 @@ ul{
 
 li{
 	display: inline-block;	/* Transforma todos os itens da lista em palavras, (mesma linha) */
-	bor  der: 1px solid black;
+	/* border: 1px solid black; */
 	padding: 15px;	/* Aumenta o espaçamento interno, esta será a área "clicável" do menu */
 	width: 150px;	/* Aumenta a largura dos itens da lista, ou seja os menus */
 	text-transform: uppercase;
 	margin-left: 10px;	/* Aumenta o espaço externo entre os itens do menu */
 	cursor: pointer;	/* Define o cursor do mouse como a "mãozinha" */
 	box-shadow: 5px 5px 5px #9ad4d6;
+	border-radius: 5px;
 }
 
 /* Hover é o efeito de alterar o visual quando posicionamos o mouse sobre o elemente com hover */
@@ -34,4 +54,34 @@ li:hover{
 	background: #ffef9f;	
 	text-decoration: underline;	/* Cria o underline sobre os itens do menu */
 	font-weight: bolder;
+}
+
+table{
+	margin: 50px;
+	border-collapse: collapse;
+	box-shadow: 5px 5px 5px #9ad4d6;
+	border-radius: 5px;
+}
+
+td, th{
+	width: 100px;
+	border: 2px solid #9ad4d6;
+	/* border-top: 2px solid #9ad4d6; */
+	padding: 5px;
+	text-align: center;
+}
+
+th{
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 90%;
+}
+
+tr:hover{	
+	background: #ffef9f;	
+}
+
+.rodape{
+	/* background: url(../img/fundo.jpg) no-repeat center center; */
+	box-shadow: 5px 5px 5px #9ad4d6;
 }
