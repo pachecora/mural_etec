@@ -19,12 +19,14 @@ body{
 .secundaria{ grid-area: secundaria; }
 .rodape{ grid-area: rodape; }
 
+
 h1{
 	margin: 50px;
 	box-shadow: 5px 5px 5px #9ad4d6;
 	font-weight: 100;
-	padding: 30px;
+	padding: 20px;
 	border-radius: 5px;
+	text-align: center;
 }
 
 ul{
@@ -57,7 +59,8 @@ li:hover{
 }
 
 table{
-	margin: 50px;
+	margin: auto;
+	margin-bottom: 350px;
 	border-collapse: collapse;
 	box-shadow: 5px 5px 5px #9ad4d6;
 	border-radius: 5px;
@@ -83,5 +86,14 @@ tr:hover{
 
 .rodape{
 	/* background: url(../img/fundo.jpg) no-repeat center center; */
-	box-shadow: 5px 5px 5px #9ad4d6;
+	text-align: center;
+}
+
+
+.contatos{
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 25px;
+	color: #000;
 }
