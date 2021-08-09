@@ -7,6 +7,7 @@ body{
 .container{
 	display: grid;	/* Cria o contexto de formatação de grade */
 	grid-template-rows: auto auto 15vw;
+	grid-template-columns: 15vw 70vw 15vw;
 	grid-template-areas: 
 		"primaria menu secundaria"
 		"primaria principal secundaria"
@@ -96,4 +97,17 @@ tr:hover{
 	letter-spacing: 0.2em;
 	font-size: 25px;
 	color: #000;
+}
+
+.texto{
+	border: 1px solid #9ad4d6;
+	padding: 20px;
+	text-indent: 20px;
+	text-align: justify;
+	line-height: 2;
+	/* box-shadow: 5px 5px 5px #9ad4d6; */
+}
+
+a{
+	text-decoration: none;
 }
